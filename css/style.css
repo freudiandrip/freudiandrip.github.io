@@ -221,7 +221,7 @@ h1 {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: baseline;
-  /* gap: 5vw; */
+  gap: 5vw;
 }
 
 .description {
@@ -326,6 +326,10 @@ h1 {
     padding: 20px;
   }
 
+  .info{
+    gap: 0px;
+  }
+
   .description {
     max-width: 98vw;
   }
@@ -357,6 +361,7 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 0px;
   }
 
   .text-m-r {
