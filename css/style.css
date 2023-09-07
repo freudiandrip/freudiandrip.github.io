@@ -53,8 +53,9 @@ a:hover {
 }
 
 .header a {
-  font-family: 'Olympe Mono';
+  /* font-family: 'Olympe Mono'; */
   /* font-family: 'CMU serif'; */
+  font-family: 'Space Mono', monospace;
   font-size: 18px;
 }
 
@@ -70,8 +71,8 @@ a:hover {
 }
 
 h1 {
-  /* font-family: 'Space Mono', monospace; */
-  font-family: 'CMU serif';
+  font-family: 'Space Mono', monospace;
+  /* font-family: 'CMU serif'; */
 }
 
 .works {
