@@ -1,0 +1,359 @@
+/* CUSTOM CSS */
+
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'CMU serif';
+  src: url('../assets/CMU-Roman-regular.ttf')
+}
+
+@font-face {
+  font-family: 'Olympe mono';
+  src: url('../assets/OlympeMono-Regular.otf')
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF9F6;
+
+  font-family: 'CMU serif';
+  font-size: 16px;
+  color: #222222;
+  padding-bottom: 2px;
+}
+
+.pg-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  max-width: 220px;
+  position: sticky;
+  align-self: flex-start; /* flexbox fix for sticky */
+  
+  top: 24px;
+  padding-left: 24px;
+  /* margin-right: -44px; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+a {
+  color: #808080;
+  text-decoration: underline;
+  transition: color 0.2s linear;
+}
+
+a:hover {
+  color: #E75EE2;
+}
+
+.header a {
+  font-family: 'Olympe Mono';
+  /* font-family: 'CMU serif'; */
+  font-size: 18px;
+}
+
+h1 {
+  /* font-family: 'Space Mono', monospace; */
+  font-family: 'CMU serif';
+}
+
+.works {
+  /* min-height: 70vh; */
+  padding-bottom: 10vh;
+}
+
+.main {
+  padding-bottom: 20vh;
+}
+
+.data-viz {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content {
+  width: 80vw;
+  max-width: 980px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-right: 24px;
+} 
+
+.heading {
+  /* width: 100%; */
+  display: inline-block;
+  /* white-space: nowrap; */
+  word-wrap: break-word;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.divider {
+  height: 8px;
+  width: 164px;
+
+  background-color: #E75EE2;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.data-showcase {
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.data-work {
+  max-width: 480px;
+  width: auto;
+  height: auto;
+  display: inline-block;
+
+  padding: 8px;
+}
+
+.UX {
+  display: flex;
+  flex-direction: row;
+}
+
+.links-expanded {
+  padding-top: 12px;
+
+  /* font-family: 'Space mono', monospace; */
+  font-family: 'CMU serif';
+  font-weight: 500;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.phone-23-2 {
+  grid-area: iphoneX;
+}
+
+.ipad-1-24 {
+  grid-area: ipad;
+  align-self: center;
+}
+
+.imac-23-23 {
+  grid-area: imac;
+}
+
+.phone-23-4 {
+  grid-area: iphoneSE-white;
+}
+
+.phone-3-34 {
+  grid-area: iphoneSE-black;
+}
+
+.design-grid {
+  /* min-width: 70%; */
+  margin-left: -16px;
+  /* padding-right: 16px; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /* grid-auto-rows: 1fr; */
+  column-gap: 12px;
+  justify-items: stretch;
+  align-content: center;
+
+  grid-template-areas: 
+    ". . ipad ipad ipad ipad"
+    "iphoneX iphoneX ipad ipad ipad ipad"
+    "iphoneX iphoneX imac imac imac iphoneSE-white"
+    ". . . . iphoneSE-black iphoneSE-black";
+}
+
+.screens { 
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.screens img {
+ grid-row-start: 1;
+ grid-column-start: 1;
+}
+
+.screen {
+  z-index: 1;
+}
+
+
+.info {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: baseline;
+  /* gap: 5vw; */
+}
+
+.description {
+  max-width: 70%;
+}
+
+/* adapted from:
+ * https://www.w3docs.com/snippets/css/how-to-have-the-marquee-effect-without-using-the-marquee-tag-with-css-javascript-and-jquery.html */
+.marquee {
+  background-color: #000000;
+  /* height: 32px; */
+  width: 100%;
+  
+  font-family: 'Space mono', monospace;
+  font-size: 11.5px;
+  color: #ffffff;
+  /* position: relative; */
+  
+  border-top: 2px solid #E75EE2;
+  border-bottom: 2px solid #E75EE2;
+
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 32px;
+  content: "";
+  z-index: 1;
+}
+
+.marquee:before {
+  left: 0;
+}
+
+.marquee:after {
+  right: 0;
+}
+
+.marquee__content {
+  width: 300%;
+  display: flex;
+  line-height: 32px;
+  animation: marquee 10s linear infinite forwards;
+}
+
+.marquee__content:hover {
+  animation-play-state: paused;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 33.33%;
+  /* reset list */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.6%);
+  }
+}
+
+@media (max-width: 760px) {
+  .data-work {
+    max-width: 360px;
+  }
+
+  .content {
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+  }
+
+  .UX {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .design-grid {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-m-r {
+    text-align: right;
+  }
+
+  .float-m-r {
+    float: right;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .description {
+    max-width: none;
+  }
+
+  .works {
+    padding-bottom: 28px;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .data-work {
+    max-width: 520px;
+  }
+
+  .UX {
+    justify-content: space-between;
+  }
+
+  .design-grid {
+    margin-left: none;
+    max-width: 75%;
+  } 
+}
+
+
+/*---------- END OF FILE ----------*/

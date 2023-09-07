@@ -1,0 +1,263 @@
+/*#########################################
+ *  CUSTOM STYLE SHEET 
+ * ######################################*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Instrument+Sans:wght@400;600&family=Cutive+Mono&family=Instrument+Sans:ital,wght@0,400;0,600;1,400&family=Nanum+Myeongjo:wght@400;700;800&family=Pathway+Extreme:wght@200;400&display=swap');
+
+@font-face {
+  font-family: 'Minipax';
+  src: url('../assets/fonts/Minipax-Regular.woff2'), url('../assets/fonts/Minipax-Regular.woff2') ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+ /* font-family: 'Cormorant Garamond', serif; */ 
+  /* background-color: #c5becc; */
+  background-color: #ffffff;
+  
+  font-family: 'Instrument Sans', serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  color: #222222;
+}
+
+body a{
+  color: #F079FF;
+  background-color: #ffffff;
+  
+  text-decoration: none;
+  padding: 2px;
+  line-height: 1.5;
+  transition: fill 1s ease;
+}
+
+body a:hover {
+  background-color: #F079FF;
+  color: #ffffff;
+}
+
+.header {
+  background-color: inherit;
+  background-image: url("../assets/img/header.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  margin: auto;
+  text-align: center;
+}
+
+.byline {
+  text-align: center;
+}
+
+.wrapper {
+  /* centers div */
+  margin: auto; 
+
+  width: 88vw;
+  max-width: 980px;
+}
+
+h1 {
+  /* font-family: 'Nanum Myeongjo', serif; */
+  font-family: 'Minipax', serif;
+  font-size: 28pt;
+  font-weight: 600;
+  color: #f8f8f8;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+/* header { */
+/*   padding: 32px 40px; */
+/* } */
+
+.content {
+  padding: 40px 40px;
+}
+
+p {
+  padding: 12px 0;
+}
+
+.writing {
+  padding-bottom: 24px;
+}
+
+.summary {
+  width: 90vw;
+  max-width: 920px;
+  padding: 12px 4px;
+
+  font-size: 8pt;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.video {
+  padding: 16px 0px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.intro {
+  padding: 8px 4px 8px 100px;
+  font-size: 14pt;
+  font-weight: 700;
+
+  /* margin: auto; */
+}
+
+.quote-block {
+  font-size: 18pt;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-left: 20px;
+  border-left: solid 6px;
+  border-color: #303030;
+}
+
+.works {
+  background-color: #c5becc;
+  width: 100%;
+  margin: auto;
+  
+  font-family: 'Cutive Mono', monospace;
+  color: #222222;
+
+  font-size: 12pt;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.info-box {
+  width: 80%;
+  border-left: solid 3px;
+  border-color: #534a5d;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.info-box div {
+  border-bottom: solid 3px;
+  border-color: #534a5d;
+  padding: 11px;
+}
+
+.info .title {
+  border-top: solid 3px;
+}
+
+.cover-display {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.cover img {
+  max-width: 100px;
+  height: auto;
+}
+
+.current-cover {
+  z-index: 10;
+}
+
+span .info {
+  font-family: inherit;
+  font-weight: bold;
+} 
+
+.chart {
+  margin: auto;
+  width: 92vw;
+  padding-bottom: 12px;
+}
+
+svg .img {
+  width: 16px;
+  height: 20px;
+}
+
+.select {
+  /* width: 90vw; */
+  /* max-width: 980px; */
+  
+  text-align: right;
+  padding-top: 16px;
+}
+
+select.scale {
+  font-family: inherit;
+  padding: 4px;
+}
+
+#footer {
+  /* white-space: pre-wrap; /1* CSS3 *1/ */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */    
+  white-space: -o-pre-wrap; /* Opera 7 */    
+  word-wrap: break-word; /* Internet Explorer 5.5+ */`
+}
+
+/* g.title rect.book { */
+/*    stroke: #eeeeee; */
+/*    stroke-width: 3; */
+/*    transition: fill 0.5s ease; */
+/* } */
+
+g.title:hover rect.book{
+  stroke: #F079FF;
+  stroke-width: 8;
+}
+
+@media (max-width: 680px) {
+  .header {
+    background-image: url("../assets/img/header-small.svg");
+    height: 100vh;
+    width: auto;
+  }
+
+  .wrapper {
+    width: 95vw;
+  }
+
+  .works {
+    flex-direction: column;
+  }
+
+  .cover-display {
+    width: auto;
+    padding: 16px 0px;
+  }
+
+  .info-box {
+    width: auto;
+    border-left: none;
+    border-top: 3px solid;
+  }
+
+  .intro {
+    font-size: 12pt;
+  }
+
+}
