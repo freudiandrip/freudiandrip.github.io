@@ -378,6 +378,7 @@ h1 {
 
   .description {
     max-width: none;
+    line-height: 1.2;
   }
 
   .works {
