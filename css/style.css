@@ -22,6 +22,7 @@ body {
 
   font-family: 'CMU serif';
   font-size: 16px;
+  line-height: 1.2;
   color: #222222;
   padding-bottom: 2px;
 }
@@ -46,7 +47,7 @@ a:hover {
   align-self: flex-start; /* flexbox fix for sticky */
   
   top: 24px;
-  padding-left: 24px;
+  /* padding-left: 24px; */
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -63,11 +64,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding:0px 24px;
 
 }
 
 .header .logo {
   max-width: 200px;
+  padding-left: 24px;
 }
 
 h1 {
@@ -310,7 +313,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 24px;
+    /* padding-right: 24px; */
   }
 
   .header .logo {
@@ -323,7 +326,7 @@ h1 {
 
   .content {
     width: 98vw;
-    padding: 20px;
+    padding: 2vw;
   }
 
   .info{
