@@ -154,13 +154,11 @@ h1 {
 }
 
 .links-expanded {
-  padding-top: 12px;
-
-  /* font-family: 'Space mono', monospace; */
   font-family: 'CMU serif';
+  font-size: 20px;
   font-weight: 500;
   line-height: 2;
-  font-size: 20px;
+  padding-top: 12px;
 }
 
 .phone-23-2 {
