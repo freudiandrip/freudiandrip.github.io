@@ -1,0 +1,38 @@
+/* CUSTOM CSS */
+
+
+.viz-samples {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+
+  padding-left: 48px;
+}
+
+h2, h3 {
+  font-family: 'Space Mono', monospace;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h4 {
+  margin-bottom: 4px;
+}
+
+.heading {
+  padding-bottom: 16px; 
+}
+
+.samples {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 580px) {
+  .viz-samples {
+    padding-left: 16px;
+  }
+}
+
