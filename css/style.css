@@ -33,8 +33,10 @@ body {
 }
 
 a {
-  color: #808080;
+  color: #222222;
   text-decoration: underline;
+  text-decoration-color: #E75EE2;
+  text-decoration-thickness: 2px;
   transition: color 0.2s linear;
 }
 

@@ -28,11 +28,16 @@ h4 {
 .samples {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 @media (max-width: 580px) {
   .viz-samples {
     padding-left: 16px;
+  }
+
+  .samples {
+    width: auto;
   }
 }
 
