@@ -99,9 +99,9 @@ g#star2 path {
   animation: blink 0.8s ease-in-out infinite;
 }
 
-/* .hide { */
-/*   visibility: hidden; */
-/* } */
+.hide {
+  display: none;
+}
 
 /* .show { */
 /*   visibility: visible; */
@@ -173,9 +173,17 @@ h1 {
   width: auto;
   height: auto;
   display: inline-block;
-
   padding: 8px;
 }
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
 
 .UX {
   display: flex;
