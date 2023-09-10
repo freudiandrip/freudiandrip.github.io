@@ -36,9 +36,13 @@ const gilmoresTag = document.querySelector("div#gilmores")
 function toggle(div) {
   const imgOn = div.querySelector("img.visible")
   const imgOff = div.querySelector("img.hidden")
-
-  imgOn.className = "hidden"
-  imgOff.className = "visible"
+  const screenWidth = window.innerWidth
+  
+  // only toggle on non-mobile screens
+  if (screenWidth > 760) {
+    imgOn.className = "hidden"
+    imgOff.className = "visible"
+  }
 }
 
 wkcTag.addEventListener("mouseenter", (event) => {
