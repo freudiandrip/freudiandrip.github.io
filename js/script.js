@@ -3,22 +3,6 @@ CUSTOM JS FUNCTIONS
 FOR KIMHNGUYEN.COM - SEPTEMBER 2023
 --------------------------------------------------------*/
 
-//--------------- cursor circle trail ----------------//
-const DOM = document.querySelector("html")
-const cursor = document.querySelector("svg circle")
-
-const customCursor = function() {
-  var winWidth = DOM.clientWidth
-  var winHeight = DOM.clientHeight
-  var posX = MouseEvent.clientX
-  var posY = MouseEvent.clientY
-
-  console.log(posX, posY)
-}
-
-DOM.addEventListener("mousemove", customCursor())
-customCursor()
-
 //--------------- logo sparkling effect -----------------//
 // selecting tags
 const star1 = document.querySelector("svg g.star1")

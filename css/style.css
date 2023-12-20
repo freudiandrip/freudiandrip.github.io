@@ -254,6 +254,7 @@ h1 {
   z-index: 1;
 }
 
+
 .info {
   display: flex;
   width: 100%;
@@ -266,18 +267,6 @@ h1 {
 .description {
   max-width: 70%;
 }
-
-svg.cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-
-svg circle {
-  fill: var(--accent-pink)
-}
-
 
 /* adapted from:
  * https://www.w3docs.com/snippets/css/how-to-have-the-marquee-effect-without-using-the-marquee-tag-with-css-javascript-and-jquery.html */
