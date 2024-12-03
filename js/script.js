@@ -29,6 +29,9 @@ logo.addEventListener("mouseleave", (event) => {
 })
 
 //--------------- gif on hover -----------------//
+const ubiTag = document.querySelector("div#ubi")
+const colorsTag = document.querySelector("div#colors")
+const geoTag = document.querySelector("div#geo")
 const wkcTag = document.querySelector("div#wkc")
 const mutualTag = document.querySelector("div#mutual-aid")
 const gilmoresTag = document.querySelector("div#gilmores")
@@ -44,6 +47,30 @@ function toggle(div) {
     imgOff.className = "visible"
   }
 }
+
+ubiTag.addEventListener("mouseenter", (event) => {
+  toggle(ubiTag)
+})
+
+ubiTag.addEventListener("mouseleave", (event) => {
+  toggle(ubiTag)
+})
+
+colorsTag.addEventListener("mouseenter", (event) => {
+  toggle(colorsTag)
+})
+
+colorsTag.addEventListener("mouseleave", (event) => {
+  toggle(colorsTag)
+})
+
+geoTag.addEventListener("mouseenter", (event) => {
+  toggle(geoTag)
+})
+
+geoTag.addEventListener("mouseleave", (event) => {
+  toggle(geoTag)
+})
 
 wkcTag.addEventListener("mouseenter", (event) => {
   toggle(wkcTag)
