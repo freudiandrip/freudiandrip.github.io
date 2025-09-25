@@ -33,7 +33,6 @@ body {
   font-size: 12pt;
   line-height: 1.5;
   color: var(--primary-gray);
-  padding-bottom: 2px;
 }
 
 .pg-layout {
@@ -51,6 +50,11 @@ a {
 
 a:hover {
   color: var(--accent-pink);
+}
+
+h4 a {
+  font-size: 13pt;
+  font-weight: 500;
 }
 
 .header {
