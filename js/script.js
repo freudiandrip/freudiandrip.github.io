@@ -29,6 +29,8 @@ logo.addEventListener("mouseleave", (event) => {
 })
 
 //--------------- gif on hover -----------------//
+const aiboomTag = document.querySelector("div#aiboom")
+const eighthTag = document.querySelector("div#eighth")
 const ubiTag = document.querySelector("div#ubi")
 const colorsTag = document.querySelector("div#colors")
 const geoTag = document.querySelector("div#geo")
@@ -47,6 +49,22 @@ function toggle(div) {
     imgOff.className = "visible"
   }
 }
+
+aiboomTag.addEventListener("mouseenter", (event) => {
+  toggle(aiboomTag)
+})
+
+aiboomTag.addEventListener("mouseleave", (event) => {
+  toggle(aiboomTag)
+})
+
+eighthTag.addEventListener("mouseenter", (event) => {
+  toggle(eighthTag)
+})
+
+eighthTag.addEventListener("mouseleave", (event) => {
+  toggle(eighthTag)
+})
 
 ubiTag.addEventListener("mouseenter", (event) => {
   toggle(ubiTag)
